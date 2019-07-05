@@ -2,7 +2,7 @@ import uuid
 import requests
 import json
 
-api_key = "31d045e904a01dedc75b2091bcc62e688bb270fb"
+api_key = "" # put your todoist api key here
 
 def create_task(task_name, project_name):
 

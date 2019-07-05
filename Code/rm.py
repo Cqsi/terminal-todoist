@@ -1,6 +1,6 @@
 import requests
 
-api_key = "31d045e904a01dedc75b2091bcc62e688bb270fb"
+api_key = "" # put your todoist api key here
 
 projects = requests.get("https://beta.todoist.com/API/v8/projects", headers={"Authorization": "Bearer %s" % api_key}).json()
 tasks = requests.get("https://api.todoist.com/rest/v1/tasks", headers={"Authorization": "Bearer %s" % api_key}).json()
