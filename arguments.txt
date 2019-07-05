@@ -1,0 +1,11 @@
+1st argument:
+get, create, remove
+
+2nd argument:
+task, project
+
+3rd argument (create and remove only):
+<name of the project/task>
+
+4th argument (task only):
+<the project's name for the task>
