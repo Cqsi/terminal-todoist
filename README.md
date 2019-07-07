@@ -1,4 +1,5 @@
 # Terminal Todoist v1.0
+![erminal Todoist](https://github.com/Cqsi/terminal-todoist/blob/master/Pictures/terminal_todoist.jpg)
 ## **Info**
 Todoist is an app where you organize yourself by setting up projects and tasks. They are easy to access on their website, both on phone (app) and computer, but since some of us really live in the terminal, I thought it would be cool to code a program which enables you to get and edit your tasks and projects in the terminal (Command Prompt). This is currently only working on Windows, and I'm probably not going to add macOS or Linux support in the future.
 
