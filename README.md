@@ -33,4 +33,4 @@ After you have cloned the project, do:
 You need to add the GithubAutomation folder to your path variable. To do this go to<br/><br/>
 `Control panel -> System -> Advanced System Settings -> Environment Variables`<br/><br/>
 Then in system-variables click on the Path variable, then edit and add the path for the GithubAutomation folder. All this is done in order for you to run your `todo` command from anywhere (i.e you can be in any direcotry in CMD, it doesn't matter).
-After that is done go to the create.py, rm.py and get.py files and put in your Todoist API-key. That's all!
+After that is done go to the create.py, rm.py and get.py files and put in your Todoist API-key. Then go to the "terminal-todoist/batch" folder and edit the todo.bat file, and put in the path for the "terminal-todoist/code" folder instead of the default path that I used, so that the Command Promppt can run the files. 
