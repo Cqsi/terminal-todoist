@@ -2,9 +2,7 @@ import uuid
 import requests
 import json
 
-api_key = "" # put your todoist api key here
-
-def create_task(task_name, project_name):
+def create_task(task_name, project_name, api_key):
 
     projects = requests.get("https://beta.todoist.com/API/v8/projects", headers={"Authorization": "Bearer %s" % api_key}).json()
     project_names = []
@@ -23,7 +21,7 @@ def create_task(task_name, project_name):
         print("Terminating program...")
         sys.exit()
 
-def create_project(project_name):
+def create_project(project_name, api_key):
 
     requests.post("https://api.todoist.com/rest/v1/projects",
     data=json.dumps({"name": project_name}),

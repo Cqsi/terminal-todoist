@@ -1,6 +1,9 @@
 import requests
 
-api_key = "" # put your todoist api key here
+api_key = "" # don't put the apikey here, only do it in the todoist.py file!
+
+def set_apikey(apikey)
+    api_key = apikey
 
 projects = requests.get("https://beta.todoist.com/API/v8/projects", headers={"Authorization": "Bearer %s" % api_key}).json()
 tasks = requests.get("https://api.todoist.com/rest/v1/tasks", headers={"Authorization": "Bearer %s" % api_key}).json()
@@ -13,8 +16,8 @@ for x in range(len(projects)):
 for x in range(len(tasks)):
     task_names.append(tasks[x]["content"])    
 
-def exitProgram(type, name):
-    print("There is no " + element + " called " + name + "!")
+def exitProgram(type_name, name):
+    print("There is no " + type_name + " called " + name + "!")
     print("Terminating program...")
     sys.exit()
 

@@ -3,14 +3,13 @@ import sys
 import get
 import create
 import rm
+import complete
 
 arguments = []
+api_key = "" # put your todoist api key here
 
 for x in range(len(sys.argv)):
     arguments.append(sys.argv[x])
-
-def foo():
-    print("")
 
 def exitProgram():
     print("You typed the command wrong!")
@@ -19,24 +18,26 @@ def exitProgram():
 
 def todo():
     if arguments[1] == "get":
-        get.get_tasks()
+        get.get_tasks(api_key)
 
     elif arguments[1] == "create":
         if arguments[2] == "task":
-            create.create_task(arguments[3], arguments[4])
+            create.create_task(arguments[3], arguments[4], api_key)
         elif arguments[2] == "project":
-            create.create_project(arguments[3])
+            create.create_project(arguments[3], api_key)
         else:
             exitProgram()
 
     elif arguments[1] == "rm":
+        rm.set_apikey(api_key)
         if arguments[2] == "task":
             rm.remove_task(arguments[3])
         elif arguments[2] == "project":
            rm.remove_project(arguments[3])
         else:
             exitProgram()
-
+    elif arguments[1] == "complete":
+        complete.complete_task(arguments[2], api_key)
     else:
         exitProgram()
 
