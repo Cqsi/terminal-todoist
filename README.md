@@ -16,7 +16,7 @@ You access this program by starting your command with **todo**. Then there are f
 * `todo get` - gets all the projects and its tasks and prints it neatly into the terminal
 
 * `todo create project <name of your project>` - creates a project with given name
-* `todo create tasks <name of your task> <name of the project you want to put in>` - creates a task with given name and puts it into the project with the name you entered
+* `todo create task <name of your task> <name of the project you want to put in>` - creates a task with given name and puts it into the project with the name you entered
 
 * `todo remove project <name of project>` - removes project with given name
 * `todo remove task <name of task>` - removes task with given name
