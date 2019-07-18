@@ -1,4 +1,4 @@
-import request
+import requests
 
 def get_tasks(api_key):
     projects = requests.get("https://beta.todoist.com/API/v8/projects", headers={"Authorization": "Bearer %s" % api_key}).json()
