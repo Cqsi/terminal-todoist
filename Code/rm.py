@@ -2,9 +2,6 @@ import requests
 
 api_key = "" # don't put the apikey here, only do it in the todoist.py file!
 
-def set_apikey(apikey)
-    api_key = apikey
-
 projects = requests.get("https://beta.todoist.com/API/v8/projects", headers={"Authorization": "Bearer %s" % api_key}).json()
 tasks = requests.get("https://api.todoist.com/rest/v1/tasks", headers={"Authorization": "Bearer %s" % api_key}).json()
 project_names = []

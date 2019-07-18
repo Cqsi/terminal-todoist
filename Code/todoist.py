@@ -28,8 +28,7 @@ def todo():
         else:
             exitProgram()
 
-    elif arguments[1] == "rm":
-        rm.set_apikey(api_key)
+    elif arguments[1] == "remove":
         if arguments[2] == "task":
             rm.remove_task(arguments[3])
         elif arguments[2] == "project":
