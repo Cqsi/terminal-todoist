@@ -6,7 +6,7 @@ import rm
 import complete
 
 arguments = []
-api_key = "" # put your todoist api key here
+api_key = "31d045e904a01dedc75b2091bcc62e688bb270fb" # put your todoist api key here
 
 for x in range(len(sys.argv)):
     arguments.append(sys.argv[x])

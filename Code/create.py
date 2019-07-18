@@ -4,7 +4,7 @@ import json
 
 def create_task(task_name, project_name, api_key):
 
-    projects = requests.get("https://beta.todoist.com/API/v8/projects", headers={"Authorization": "Bearer %s" % api_key}).json()
+    projects = requests.get("https://api.todoist.com/rest/v1/projects", headers={"Authorization": "Bearer %s" % api_key}).json()
     project_names = []
 
     for x in range(len(projects)):
