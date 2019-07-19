@@ -4,9 +4,10 @@ import get
 import create
 import rm
 import complete
+import printhelp
 
 arguments = []
-api_key = "31d045e904a01dedc75b2091bcc62e688bb270fb" # put your todoist api key here
+api_key = "" # put your todoist api key here
 
 for x in range(len(sys.argv)):
     arguments.append(sys.argv[x])
@@ -37,6 +38,8 @@ def todo():
             exitProgram()
     elif arguments[1] == "complete":
         complete.complete_task(arguments[2], api_key)
+    elif arguments[1] == "help":
+        printhelp.print_help()
     else:
         exitProgram()
 

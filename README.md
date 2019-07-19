@@ -1,4 +1,4 @@
-# Terminal Todoist v2.0
+# Terminal Todoist v2.1
 ![erminal Todoist](https://github.com/Cqsi/terminal-todoist/blob/master/Pictures/terminal_todoist.jpg)
 
 ## **Info**
@@ -6,6 +6,11 @@ Todoist is an app where you organize yourself by setting up projects and tasks. 
 
 
 ## What commands are there?
+
+Do `todo help` to get a list of available commands and their meanings
+
+### Extra help
+
 You access this program by starting your command with **todo**. Then there are four base commands: <br/>
 * **get** - gets all the projects and its tasks and prints it neatly into the terminal (so `todo get` will do that)
 * **create** - create either a project or task (the next step in the command is where you choose)
@@ -14,6 +19,7 @@ You access this program by starting your command with **todo**. Then there are f
 
 **Commands:**
 * `todo get` - gets all the projects and its tasks and prints it neatly into the terminal
+* `todo help` - gives you help about the commands
 
 * `todo create project <name of your project>` - creates a project with given name
 * `todo create task <name of your task> <name of the project you want to put in>` - creates a task with given name and puts it into the project with the name you entered
