@@ -29,6 +29,9 @@ You access this program by starting your command with **todo**. Then there are f
 
 * `todo complete <name of task>` - completes task with given name
 
+![todo help](https://github.com/Cqsi/terminal-todoist/blob/master/Pictures/screenshot.PNG)
+
+
 ## Installation help
 
 This guide provides help on how to set up the projects.
