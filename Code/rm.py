@@ -1,7 +1,7 @@
 import requests
 import sys
 
-api_key = "31d045e904a01dedc75b2091bcc62e688bb270fb"
+api_key = ""
 
 project_names = []
 task_names = []
