@@ -45,4 +45,4 @@ After you have cloned the project, do:
 You need to add the terminal-todoist/batch folder path to your path variable. To do this go to<br/><br/>
 `Control panel -> System -> Advanced System Settings -> Environment Variables`<br/><br/>
 Then in system-variables click on the Path variable, then edit and add the path for the terminal-todoist/batch folder. All this is done in order for you to run your `todo` command from anywhere (i.e you can be in any direcotry in CMD, it doesn't matter).
-After that is done go to the todoist.py and put in your Todoist API-key. Then go to the "terminal-todoist/batch" folder and edit the todo.bat file, and put in the path for the "terminal-todoist/code" folder instead of the default path that I used, so that the Command Prompt can run the files. That should be it.
+After that is done go to the todoist.py and put in your Todoist API-key. That should be it.
